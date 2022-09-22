@@ -1,78 +1,48 @@
-let util = {
-    reversed: function(source) {
-            if(typeof(source) === "string") { //проверка на строку
-                function reverseStr (source) {
-                    let newStr = '';
-                    for (let i = source.length-1; i >= 0; i--) {
-                         newStr += source.charAt(i);            
-                    };
-                    return newStr;
-                };
-                console.log(reverseStr(source));
-            } else if(typeof(source) === "object") { //проверка на массив
-                function reverseArray(source) {
-                    let newArray = [];
-                    for (let i = 0; i < source.length; i++) {
-                        newArray[i] = source[(source.length-1) - i];
-                    };
-                    return newArray;
-                };
-                console.log(reverseArray(source));
-            } else { //т.к. в условии сказано либо строка, либо массив, сделала третий вариант
-                console.log("Neither array nor string entered");
-            };
+const students = [
+    {
+        id:10,
+        name: 'John Smith',
+        marks: [10, 8, 6, 9, 8, 7 ]
     },
-    verifyNumbers: function(source) {
-        let newArray = [];
-        for (let i = 0; i < source.length; i++) {
-            if (typeof(source[i]) === 'number' && isFinite(source[i])) { //прописала, чтобы не выводило NaN, почему-то js считает его числом
-                newArray.push(source[i])
-            };
-        };
-        console.log(newArray);
+    {
+        id:11,
+        name: 'John Doe',
+        marks: [ 9, 8, 7, 6, 7 ]
     },
-    getMin: function(source) {
-        function getMinNumber(source) {
-            for (let i = 0; i < source.length; i++) {
-                if (source[0] > source[i]) {
-                    source[0] = source[i];
-                };
-            };
-            return source[0];
-        };
-        console.log(getMinNumber(source));
+    {
+        id:12,
+        name: 'Thomas Anderson',
+        marks: [6, 7, 10, 8 ]
     },
-    getAverage: function(source) {
-        function average(source) {
-            let sum = 0;
-            for (let i = 0; i < source.length; i++) {
-                sum += source[i];
-            };
-            return sum / source.length;
-        };
-        console.log(average(source));
-    },
-    getMaxString: function(source) {
-        let maxStr = 0;
-        let max;
-        function longStr(source) {
-            for (let i = 0; i < source.length; i++) {
-                if (source[i].length > maxStr) {
-                    maxStr = source[i].length;
-                    max = source[i];
-                };
-            };
-            return max;
-        };
-        console.log(longStr(source))
+    {
+        id:13,
+        name: 'Jean-Baptiste Emanuel Zorg',
+        marks: [10, 9, 8, 9 ]
     }
-};
+]
 
-/* Проверка */
-util.reversed("Hellow World!");
-util.reversed(['Bob', 39, true, NaN]);
+    let calculateGroupAverageMark = (students) => {
+        let newArray = [];
+        let sum;
+        for (let i = 0; i < students.length; i++) {
+            sum = students[i].marks.reduce((a, b) => a + b);
+            let res = sum / (students[i].marks.length);
+            newArray.push(res);
+        }
+        return newArray;
+    };
+    console.log(calculateGroupAverageMark(students));
 
-util.verifyNumbers(['Bob', 39, true, -24, 3.52, 678, NaN, null, 887, 8, "778"]);
-util.getMin([13, 0, -1.43, 6, 7654, 543, 53, 932]);
-util.getAverage([2, 4, 4]);
-util.getMaxString([ "Hellow!", "Hellow World!", "Very looooong string", "World!"]);
+    let newArrayAV = [];
+    let calculateStudentAverageMark = (students) => {
+        newArrayAV = students;
+        let sum;
+        for (let i = 0; i < students.length; i++) {
+            sum = students[i].marks.reduce((a, b) =>  a + Math.round(b));
+            newArrayAV[i].averageMark = sum/(students[i].marks.length);
+        }
+        return newArrayAV;    
+    };
+    
+calculateStudentAverageMark(students);
+console.log(newArrayAV[3].averageMark);
