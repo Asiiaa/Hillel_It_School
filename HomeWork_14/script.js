@@ -1,0 +1,1 @@
+const accordion = new Accordion('.accordion-title');
