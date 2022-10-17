@@ -1,1 +1,1 @@
-const accordion = new Accordion('.accordion-title');
+const accordion = new Accordion(document.getElementById('accordion'));

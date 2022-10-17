@@ -1,24 +1,27 @@
 class Accordion {
-   static CLASSES = {
-      ACTIVE: 'active'
-   }
+  static CLASSES = {
+    CONTAINER: 'container',
+    ITEM: 'accordion-item',
+    TITLE: 'accordion-title',
+    COLLAPSED_CONTENT: 'accordion-content',
+    EXPANDED_CONTENT: 'expanded',
+  };
 
-   #titles = null;
+  #item = null;
 
-   constructor(titles) {
-       this.#titles = titles;
-       this.#open();
-    }
-   
-   #open() {
-       const accordionTitles = document.querySelectorAll(this.#titles);
-       
-       accordionTitles.forEach((item) => {
-          item.addEventListener('click', () => { 
-             item.classList.contains(Accordion.CLASSES.ACTIVE) ? 
-                item.classList.remove(Accordion.CLASSES.ACTIVE) :            
-                item.classList.add(Accordion.CLASSES.ACTIVE);
-          });
-       });
-    }
- }
+  constructor(item) {
+    this.#item = item;
+    this.#DelegatedEventListener();
+  }
+
+  #DelegatedEventListener() {
+    this.#item.addEventListener('click', (e) => {
+      if (e.target.classList.contains(Accordion.CLASSES.TITLE)) {
+        this.#toggleItemsContent(e.target.nextElementSibling);
+      }
+    });
+  }
+  #toggleItemsContent(item) {
+    item.classList.toggle(Accordion.CLASSES.EXPANDED_CONTENT);
+  }
+}
