@@ -1,0 +1,121 @@
+body {
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(82, 82, 82) 100%);
+    box-sizing: border-box;
+    }
+    
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 45rem;
+      margin: 60px auto;
+      border-radius: 1px 60px;
+      border: 2px solid rgb(125, 124, 124);
+      box-shadow: 0 0 rgb(251, 251, 251), -1em 0 .4em rgba(125, 124, 124, 0.482);
+      background-color: #f2f2f2;
+      padding: 30px;
+    }
+    
+    h1 {
+      text-align: center;
+      font-weight: 100;
+  
+      margin: 0px;
+    }
+    
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    
+    ul li {
+      cursor: pointer;
+      position: relative;
+      border-radius: 1px 20px;
+      padding: 12px 8px 12px 40px;
+      background: #e4e3e3;
+      font-size: 18px;
+      margin: 4px 0;
+    }
+    
+    ul li:hover {
+      background: #ddd;
+      transition: 0.3s;
+    }
+    /* prettier-ignore */
+    [data-is-checked="true"] {
+      background-color: #44ff00;
+      text-decoration: line-through;
+      color: #fff;
+    }
+    /* prettier-ignore */
+    [data-is-checked="true"]:hover {
+      background-color: #00d785;
+    }
+    
+    input {
+      width: 70%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border-radius: 1px 20px;
+    }
+    
+    input:invalid {
+      background-color: #f4433650;
+      border: 2px solid rgb(250, 0, 0);
+    }
+    
+    button {
+      padding: 12px 7px 12px 7px;
+      border-radius: 1px 20px;
+      border: none;
+      background-color: inherit;
+      cursor: pointer;
+    }
+    
+    .delete-btn {
+      position: absolute;
+      right:15px;
+      top: 2px;
+  
+      font-weight: bold;
+    }
+    
+    .delete-btn:hover {
+      background-color: #f44336;
+      color: white;
+    }
+    
+    .edit-btn {
+      position: absolute;
+      right: 85px;
+      top: 2px;
+  
+      font-weight: bold;
+    }
+    
+    .edit-btn:hover {
+      background-color: #3662f4;
+      color: white;
+    }
+    
+    .add-btn {
+      width: 20%;
+      background-color: #000000;
+      color: white;
+      margin: 8px 0;
+  
+      font-weight: bold;
+    }
+    
+    .add-btn:hover {
+      background-color: #1f1f1f;
+    }
+    
+    .add-btn:disabled {
+      background-color: grey;
+      color: black;
+      cursor: not-allowed;
+    }
+    
