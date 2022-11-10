@@ -1,0 +1,1 @@
+new TodoController(document.querySelector('#todo-container'));//инициализируем контроллер и передает контеинер, в котором нужно создтать todoList

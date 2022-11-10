@@ -1,0 +1,63 @@
+.todo-item {
+    padding: 10px;
+    border: 1px solid;
+    margin: 5px;
+    background-color: lightyellow;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .todo-item.done {
+    background-color: lightgreen;
+  }
+  
+  .todo-item .delete-btn {
+    float: right;
+    margin-right: 10px;
+  }
+  
+  input.invalid-input {
+    background-color: lightcoral;
+  }
+
+  .add-btn {
+    float: right;
+    margin-right: 10px;
+    background-color: green;
+    color: aliceblue;
+  }
+
+  /* .new-todo-form {
+
+  } */
+
+  .input-new-task {
+    margin-left: 5px;
+    width: 810px;
+    height: 40px;
+
+    border-radius: 5px;
+
+    color: black;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+
+  .add-btn {
+    margin-top: 3px;
+    margin-right: 0px;
+    width: 120px;
+    height: 40px;
+    color: azure;
+  }
+
+  .add-btn:hover {
+    background-color: rgb(7, 189, 7);
+    transition: 0.5s;
+    /* color: aliceblue; */
+  }
+
+  .invalide-input {
+    background: red;
+    color: aliceblue;
+  }
