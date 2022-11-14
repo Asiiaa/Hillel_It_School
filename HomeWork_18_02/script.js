@@ -1,0 +1,1 @@
+new BoardController(document.querySelector('#boardContainer'));

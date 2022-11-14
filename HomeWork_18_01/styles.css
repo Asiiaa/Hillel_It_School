@@ -1,0 +1,90 @@
+.board-container {
+    margin: 30px 10px;
+    padding: 10px 0;
+    background: rgb(158, 153, 153);
+    opacity: 0.7;
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.u-full-width {
+    height: auto;
+    width: auto;
+    max-height: 200px;
+    max-width: 270px;
+
+    margin: 20px;
+
+    background: rgb(220, 220, 143);
+    border-radius: 10px 0 15px 0;
+    color: black;
+    font-weight: bold;
+}
+
+.delete-btn {
+    float: right;
+    padding: 0 10px;
+    background-color: rgb(130, 14, 14);
+    border-radius: 10px;
+}
+
+.delete-btn:hover {
+    background-color: rgb(251, 6, 6);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.title {
+    padding: 10px; 
+    min-height: 15px;
+    text-align: center;
+    border-radius: 10px 0 0;
+    background-color: rgb(9, 7, 7);
+    color: aliceblue;
+}
+
+textarea {
+    display: block;
+    margin: 10px 25px;
+
+    max-height: 120px;
+    max-width: 160px;
+}
+
+.invalide-input {
+    background-color: red;
+}
+
+.new-sticker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.create-btn {
+    width: 70px;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+    background: green;
+    color: white;
+    font-weight: bold;
+}
+
+.create-btn:hover {
+    background: rgb(3, 215, 3);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.input-new-sticker {
+    width: 600px;
+    height: 40px;
+    border-radius: 10px;
+}
