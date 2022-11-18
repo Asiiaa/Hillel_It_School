@@ -6,15 +6,17 @@ const imgScript = $('#imgScriptCollection').html();
 init();
 
 function init() {
-    fetchImg();
+    fetchImg().then(() => {
+        $owl.find('a').simpleLightbox({
+            fileExt: '',
+        });
+    });
 }
 
 function fetchImg() {
-    fetch(API_URL).then((resp) => {
-        resp.json().then((data) => {
-            renderImg(data);
-        })
-    })
+    return fetch(API_URL)
+        .then((resp) => resp.json())
+        .then(renderImg)
 }
 
 function renderImg(imgList) {
