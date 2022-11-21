@@ -1,0 +1,1 @@
+module.exports = (...arguments) => { return arguments.reduce((acc,item) => acc + item)}
