@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./utils.js/utils.js" defer></script>
+    <script src="./script.js" defer></script>
+
+    <title>Сhat</title>
+</head>
+<body>
+    <div class="block-chat">
+        <div class="chat" id="chat"></div>
+        <div class="constructor">
+            <input class="input-name" type="text" placeholder="your name..">
+            <input class="input-message" type="text" placeholder="your message..">
+            <button id="btnSend" class="btn-send">Send</button>
+        </div>
+    </div>
+
+
+    <script id="chatFramework" type="text/template">
+        <li class="todo-item">
+            {{author}} : {{message}}
+        </li>
+      </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.block-chat {
+    margin: auto;
+}
+.chat {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    border: 2px solid;
+    padding: 20px;
+}
+
+.constructor {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 22px;
+
+    width: 500px;
+    height: 50px;
+    background: rgb(186, 179, 179);
+    
+}
+
+.input-name {
+    margin-top: 15px;
+    width: 100px;
+}
+
+.input-message {
+    margin-left: 10px;
+    width: 250px;
+}
+
+.btn-send {
+    width: 105px;
+    background: green;
+    font-weight: bold;
+    border: 2px solid green;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.btn-send:hover {
+    background: rgb(8, 184, 8);
+    border: 2px solid rgb(8, 184, 8);
+    color: white;
+    transition: 0.5s;
+}
+
+.todo-item {
+    list-style-type: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
