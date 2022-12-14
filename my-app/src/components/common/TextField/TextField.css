@@ -1,0 +1,8 @@
+.invalid-input input{
+    border-color: red;
+    background-color: hotpink;
+}
+
+.invalid-input .error{
+   color: red;
+}
