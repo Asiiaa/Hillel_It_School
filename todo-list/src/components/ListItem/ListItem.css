@@ -1,0 +1,41 @@
+.item {
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item.done {
+   background-color: lightgreen; 
+}
+
+/* li button {
+    background-color: #6583e5;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+} */
+
+.list-item {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin-bottom: 5px;
+    background: rgb(243, 124, 124);
+    border: 3px solid rgb(243, 124, 124);
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgb(241, 93, 93);
+    border: 3px solid rgb(241, 93, 93);
+    transition: 0.3s;
+}
