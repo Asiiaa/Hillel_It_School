@@ -1,0 +1,11 @@
+li {
+    list-style: none;
+}
+li:hover {
+    cursor: pointer;
+    color: brown;
+}
+.active {
+    background-color: #04aa6d;
+    color: white;
+  }

@@ -1,0 +1,15 @@
+* {
+    background: rgb(227, 222, 222);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container div {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+}
