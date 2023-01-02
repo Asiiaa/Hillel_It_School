@@ -1,0 +1,86 @@
+body{
+    height: 100vh;
+    background: #066acd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#root {
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+}
+
+table {
+    margin-top: 10px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+table thead {
+    font-size: 20px;
+}
+
+td {
+    width: 120px;
+    text-align: center;
+    
+    border: 1px solid;
+}
+
+.delete-btn {
+    background: rgb(214, 62, 62);
+    border: 1px solid rgb(214, 62, 62);
+    color: white;
+}
+.delete-btn:hover {
+    background: rgb(255, 0, 0);
+}
+
+.edit-btn {
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: rgb(8, 194, 8);
+}
+
+.add-btn {
+    background: green;
+    border: 1px solid green;
+    width: 100px;
+    color: white;
+
+    margin-left: 75%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.add-btn:hover {
+    background: rgb(12, 206, 12);
+}
+
+.add-form {
+    margin-bottom: 10px;
+    margin-left: 12%;
+    margin-right: auto;
+    width: 580px;
+    background: #95978a;
+    display: grid;
+    row-gap: 5px;
+}
+
+.save-btn {
+    background: #058019;
+    border: 1px solid #058019;
+    color: white;
+}
+
+.save-btn:hover {
+    background: #06cd27;
+}
